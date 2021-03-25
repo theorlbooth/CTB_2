@@ -1,0 +1,13 @@
+[
+{
+  "model": "sales.sale",
+  "pk": 1,
+  "fields": {
+    "notes": "First sale of the day",
+    "created_at": "2021-03-22T15:46:29.385Z",
+    "number_of_kegs": 10,
+    "price_per_keg": "0.00",
+    "beer": 1
+  }
+}
+]

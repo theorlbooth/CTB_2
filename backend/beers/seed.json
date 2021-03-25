@@ -1,0 +1,98 @@
+[
+{
+  "model": "beers.beer",
+  "pk": 1,
+  "fields": {
+    "name": "Hells",
+    "abv": "4.6",
+    "description": "Hells is the lovechild of our two favourite German beer styles - Helles and Pilsner. Clean, crisp and dry, it’s the beer we always wanted to drink and the reason we started our brewery. We hope you agree.",
+    "image": "https://untappd.akamaized.net/site/beer_logos_hd/beer-158571_b32ff_hd.jpeg",
+    "keg_size": 88,
+    "keg_price": "0.00"
+  }
+},
+{
+  "model": "beers.beer",
+  "pk": 2,
+  "fields": {
+    "name": "Pale",
+    "abv": "4.0",
+    "description": "We love our american cousins. But sometimes they can be kind of full on. So we’ve crafted this beer to more British tastes. Made with American hops, it’s still got all the punch of a pale ale. Just less shouty.",
+    "image": "https://untappd.akamaized.net/site/beer_logos_hd/beer-45380_c556f_hd.jpeg",
+    "keg_size": 88,
+    "keg_price": "0.00"
+  }
+},
+{
+  "model": "beers.beer",
+  "pk": 3,
+  "fields": {
+    "name": "Off Menu IPA",
+    "abv": "5.8",
+    "description": "Our ideal IPA wasn’t on the menu, so we made it. Resisting piling up a variety of hops like toppings on a burger, we held the pickles and did things our way. Sandwiching together light malts, clean Cali ale yeast and early harvest Simcoe hops. Just what the brewers ordered.",
+    "image": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3496260_d9d05_hd.jpeg",
+    "keg_size": 88,
+    "keg_price": "0.00"
+  }
+},
+{
+  "model": "beers.beer",
+  "pk": 4,
+  "fields": {
+    "name": "Week Nite",
+    "abv": "3.0",
+    "description": "We’re living for the weeknights, so we made this beer. Unfiltered, dry-hopped and full of flavour, it’s lower in ABV, so more like dancing in the kitchen than an all-night rave (though what you do on a Tuesday is up to you).",
+    "image": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3153201_dc3a4_hd.jpeg",
+    "keg_size": 88,
+    "keg_price": "0.00"
+  }
+},
+{
+  "model": "beers.beer",
+  "pk": 5,
+  "fields": {
+    "name": "Show Off Lager",
+    "abv": "5.8",
+    "description": "Lager’s typecast as refreshing, but capable of so much more. We’re proud to show off all the things our favourite beer style can be. Crisp and clean, of course, but also hoppy and juicy, like this little number. Ta-da!",
+    "image": "https://untappd.akamaized.net/site/beer_logos_hd/beer-743565_bc65e_hd.jpeg",
+    "keg_size": 88,
+    "keg_price": "0.00"
+  }
+},
+{
+  "model": "beers.beer",
+  "pk": 6,
+  "fields": {
+    "name": "Ink",
+    "abv": "4.4",
+    "description": "Especially when it comes to stout. We use nitrogen bubbles to give our Ink Stout its thick, creamy head and smooth finish. And without getting all big headed, we think it’s the finest stout in the land.",
+    "image": "https://untappd.akamaized.net/site/beer_logos_hd/beer-106178_09cc4_hd.jpeg",
+    "keg_size": 88,
+    "keg_price": "0.00"
+  }
+},
+{
+  "model": "beers.beer",
+  "pk": 7,
+  "fields": {
+    "name": "Unfiltered Hells",
+    "abv": "4.6",
+    "description": "If Hells is our studio album, all slick finish and crisp sounds, then Unfiltered Hells is our live album. We leave the yeast in for a full bodied beer that’s just that little bit louder, bigger and real, man.",
+    "image": "https://untappd.akamaized.net/site/beer_logos_hd/beer-174594_99cb6_hd.jpeg",
+    "keg_size": 88,
+    "keg_price": "0.00"
+  }
+},
+{
+  "model": "beers.beer",
+  "pk": 8,
+  "fields": {
+    "name": "Gentleman's Wit",
+    "abv": "4.3",
+    "description": "We do and it’s not rude. Based on a traditional Belgian wit (white) beer, we’ve added the bergamot and lemon zest of Earl Grey tea for a well turned out beer that politely packs a punch.",
+    "image": "https://untappd.akamaized.net/site/beer_logos_hd/beer-108629_e87f1_hd.jpeg",
+    "keg_size": 88,
+    "keg_price": "0.00"
+  }
+}
+]
