@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import axios from 'axios'
 
 
-
 const Beers = () => {
 
   const [beers, updateBeers] = useState([])
@@ -43,32 +42,3 @@ const Beers = () => {
 }
 
 export default Beers
-
-
-
-
-{/* <div className="beer-columns" style={{ backgroundColor: 'red', padding: '6% 3% 3% 3%', height: '100vh' }}>
-      <div className="columns is-multiline is-mobile is-centered">
-        {beers.map((beer, index) => {
-          return <div className="column is-3-desktop is-6-tablet is-12-mobile" key={index}>
-            <div className="card">
-              <div className="card-image">
-                <figure className="image">
-                  <img src={beer.image} alt={beer.name} />
-                </figure>
-              </div>
-              <div className="card-content">
-                <div className="media" style={{ display: 'flex', justifyContent: 'space-between' }}>
-                  <div className="media-left">
-                    <h1 className="title">{beer.name}</h1>
-                  </div>
-                  <div className="media-right">
-                    <h2 className="title">{beer.abv}%</h2>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        })}
-      </div>
-    </div> */}

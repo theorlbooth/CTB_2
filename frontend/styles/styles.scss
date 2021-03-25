@@ -39,5 +39,22 @@
       font-size: 22px;
     }
   }
+}
+
+.new-beer, .login {
+  padding: 10% 30%; 
+
+  h1 {
+    text-align: center;
+  }
+  
+  .submit-button {
+    display: flex;
+    justify-content: center;
+
+    .button {
+      width: 90%;
+    }
+  }
 
 }
