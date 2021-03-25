@@ -8,6 +8,8 @@ from django.contrib.auth import get_user_model
 import jwt
 from .serializers.common import UserSerializer
 
+from django.views.decorators.csrf import csrf_exempt
+
 
 User = get_user_model()
 
@@ -22,6 +24,7 @@ class RegisterView(APIView):
 
 class LoginView(APIView):
 
+    @csrf_exempt
     def post(self, request):
         email = request.data.get('email')
         password = request.data.get('password')

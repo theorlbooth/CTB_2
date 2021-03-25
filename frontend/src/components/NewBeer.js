@@ -26,7 +26,7 @@ const NewBeer = (props) => {
   function handleSubmit(event) {
     event.preventDefault()
     const token = localStorage.getItem('token')
-    axios.post('/api/beers/', newBeer, {
+    axios.put('/api/beers/', newBeer, {
       headers: { Authorization: `Bearer ${token}` }
     })
       .then(resp => {
