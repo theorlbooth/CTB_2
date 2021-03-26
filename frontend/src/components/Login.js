@@ -25,6 +25,7 @@ const Login = (props) => {
 
   function handleSubmit(event) {
     event.preventDefault()
+    console.log(formData)
     axios.post('/api/auth/login/', formData)
       .then(resp => {
         if (resp.data.token === undefined) {

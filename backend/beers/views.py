@@ -4,7 +4,7 @@ from rest_framework import status
 from rest_framework.exceptions import NotFound
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
 
-from django.views.decorators.csrf import csrf_exempt
+# from django.views.decorators.csrf import csrf_exempt
 
 
 from .models import Beer
@@ -14,14 +14,14 @@ from .serializers.populated import PopulatedBeerSerializer
 
 class BeerListView(APIView):
 
-    # permission_classes = (IsAuthenticatedOrReadOnly, )
+    permission_classes = (IsAuthenticatedOrReadOnly, )
 
     def get(self, _request):
         beers = Beer.objects.all()
         serialized_beers = BeerSerializer(beers, many=True)
         return Response(serialized_beers.data, status=status.HTTP_200_OK)
 
-    @csrf_exempt
+    # @csrf_exempt
     def post(self, request):
         beer_to_create = BeerSerializer(data=request.data)
         if beer_to_create.is_valid():
