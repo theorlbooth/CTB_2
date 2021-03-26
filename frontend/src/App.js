@@ -9,14 +9,18 @@ import Navbar from './components/Navbar'
 import Beers from './components/Beers'
 import NewBeer from './components/NewBeer'
 import Login from './components/Login'
+import Home from './components/Home'
+import NewSale from './components/NewSale'
 
 const App = () => {
   return <>
     <BrowserRouter>
       <Navbar />
       <Switch>
+        <Route exact path="/" component={Home}></Route>
         <Route exact path="/beers" component={Beers}></Route>
         <Route exact path="/beers/new" component={NewBeer}></Route>
+        <Route exact path="/newsale" component={NewSale}></Route>
         <Route exact path="/login" component={Login}></Route>
       </Switch>
     </BrowserRouter>

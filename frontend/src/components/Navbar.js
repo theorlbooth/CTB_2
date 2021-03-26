@@ -18,6 +18,7 @@ const Navbar = (props) => {
           <div className="buttons">
             <Link className="button is-black" to="/">Home</Link>
             {token && <Link className="button is-black" to="/beers">Beers</Link>}
+            {token && <Link className="button is-black" to="/newsale">New Sale</Link>}
             {!token && <Link className="button is-black" to="/login">Login</Link>}
             {token && <Link className="button is-black" to="/" onClick={handleLogout}>Logout</Link>}
           </div>

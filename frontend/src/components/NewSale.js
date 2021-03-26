@@ -1,2 +1,12 @@
+import React, { useState } from 'react'
 
-// * Add sale
+const NewSale = () => {
+  
+  const [newSale, updateNewSale] = useState({})
+  
+  return <>
+
+  </>
+}
+
+export default NewSale
