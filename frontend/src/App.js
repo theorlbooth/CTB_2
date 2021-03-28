@@ -11,6 +11,7 @@ import NewBeer from './components/NewBeer'
 import Login from './components/Login'
 import Home from './components/Home'
 import NewSale from './components/NewSale'
+import Sales from './components/Sales'
 
 const App = () => {
   return <>
@@ -21,6 +22,7 @@ const App = () => {
         <Route exact path="/beers" component={Beers}></Route>
         <Route exact path="/beers/new" component={NewBeer}></Route>
         <Route exact path="/newsale" component={NewSale}></Route>
+        <Route exact path="/sales" component={Sales}></Route>
         <Route exact path="/login" component={Login}></Route>
       </Switch>
     </BrowserRouter>

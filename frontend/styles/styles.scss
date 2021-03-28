@@ -68,7 +68,7 @@
 
 // * ------ New Beer ------
 
-.new-beer, .login {
+.new-beer, .login, .new-sale {
   padding: 10% 30%; 
 
   h1 {
@@ -86,3 +86,11 @@
 }
 
 
+// * ------ Sales ------
+
+.sales {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
