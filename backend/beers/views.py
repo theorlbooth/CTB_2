@@ -57,3 +57,13 @@ class BeerDetailView(APIView):
         beer_to_delete = self.get_beer(pk=pk)
         beer_to_delete.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
+
+
+class BeerFullView(APIView):
+
+    permission_classes = (IsAuthenticatedOrReadOnly, )
+
+    def get(self, _request):
+        beers = Beer.objects.all()
+        serialized_beers = PopulatedBeerSerializer(beers, many=True)
+        return Response(serialized_beers.data, status=status.HTTP_200_OK)

@@ -1,6 +1,6 @@
 import axios from 'axios'
 import React, { useState, useEffect } from 'react'
-
+import moment from 'moment'
 
 const Sales = () => {
 
@@ -14,7 +14,7 @@ const Sales = () => {
     })
       .then(resp => {
         console.log(resp.data)
-        updateSales(resp.data)
+        updateSales(resp.data.reverse())
       })
   }, [])
 
@@ -41,7 +41,7 @@ const Sales = () => {
           {sales.map((sale, index) => {
             return <tr key={index}>
               <td className="has-text-centered">{sale.id}</td>
-              <td className="has-text-centered">{sale.date}</td>
+              <td className="has-text-centered">{moment(sale.date).format('DD MMM YY')}</td>
               <td className="has-text-centered">{sale.beer.name}</td>
               <td className="has-text-centered">{sale.customer}</td>
               <td className="has-text-centered">{sale.number_of_kegs}</td>
