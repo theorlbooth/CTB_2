@@ -16,3 +16,4 @@ class NestedBeerSerializer(serializers.ModelSerializer):
             'id',
             'name'
         )
+        

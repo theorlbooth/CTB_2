@@ -5,7 +5,7 @@ from rest_framework.exceptions import NotFound, PermissionDenied
 from rest_framework.permissions import IsAuthenticated
 
 from .models import Sale
-from .serializers.common import SaleSerializer
+from .serializers.common import SaleSerializer, LimitedSaleSerializer
 from .serializers.populated import PopulatedSaleSerializer
 
 
@@ -57,3 +57,11 @@ class SaleDetailView(APIView):
             raise PermissionDenied()
         sale_to_delete.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
+
+
+class LimitedSaleView(APIView):
+
+    def get(self, request):
+        sales = Sale.objects.all()
+        serialized_sales = LimitedSaleSerializer(sales, many=True)
+        return Response(serialized_sales.data, status=status.HTTP_200_OK)
