@@ -31,7 +31,6 @@ const NewSale = (props) => {
       [name]: value
     }
     updateNewSale(data)
-    console.log(data)
   }
 
   function handleSubmit(event) {
